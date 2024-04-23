@@ -9,11 +9,10 @@ description: |
 
 Command: `consul snapshot decode`
 
-The `snapshot decode` command is used to decode an atomic, point-in-time
-snapshot of the state of the Consul servers which includes key/value entries,
-service catalog, prepared queries, sessions, and ACLs. The snapshot is read
-from the given file and decode to `stdout` as JSON data for interpretation and
-review.
+The `snapshot decode` command accepts a file that contains a atomic point-in-time
+snapshot of the state of the Consul servers as input and then decodes the snapshot 
+to `stdout` as JSON data for interpretation and review. This snapshot includes the 
+service catalog, prepared queries, sessions, key/value entries, and ACLs. 
 
 -> Typically this is used with Consul self-contained Snapshot files obtained
 using the [`consul snapshot`](/consul/commands/snapshot) command or [Snapshot
