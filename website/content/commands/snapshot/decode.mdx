@@ -18,7 +18,7 @@ Typical use of this command occurs with Consul self-contained snapshot files obt
 with the [`consul snapshot`](/consul/commands/snapshot) command or [Snapshot
 API](/consul/api-docs/snapshot#generate-snapshot).
 
-The JSON stream information format:
+The `consul snapshot decode` command outputs JSON stream information in the following format:
 
 ```json
   {"Type": "SnapshotHeader", "Data": {"<json encoded snapshot header>"}}
